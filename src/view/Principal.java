@@ -18,6 +18,10 @@ public class Principal {
 					System.exit(0);
 				}
 				tamanho = Integer.parseInt(input);
+				if (tamanho <= 0) {
+					JOptionPane.showMessageDialog(null, "Tamanho inválido");
+					continue;
+				}
 			} catch (Exception e) {
 				JOptionPane.showMessageDialog(null, "Tamanho inválido");
 				continue;
